@@ -23,13 +23,11 @@ public class Main {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        double px = (x.a + x.b + x.c) / 2.0;
-        double areax = Math.sqrt(px*(px - x.a)*(px - x.b)*(px - x.c));
+        double areax = x.area();
 
         System.out.printf("Triangle X area: %.4f%n" , areax);
 
-        double py = (y.a + y.b + y.c) / 2.0;
-        double areay = Math.sqrt(py*(py - y.a)*(py - y.b)*(py - y.c));
+        double areay = y.area();
 
         System.out.printf("Triangle Y area: %.4f%n" , areay);
 
